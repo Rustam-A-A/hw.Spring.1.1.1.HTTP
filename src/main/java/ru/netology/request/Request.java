@@ -54,7 +54,7 @@ public class Request {
 
         var headers = new HashMap<String, String>();
         String line;
-        while(!(line = reader.readLine()).equals(" ")){
+        while(!(line = reader.readLine()).equals("")){
             //Host: example.com
             var i = line.indexOf(":");
             var headerName = line.substring(0, i);
